@@ -1,0 +1,4 @@
+GLM: 0.9.4.4
+GLEW: 1.9.0
+GLFW: 3.0.1
+SparseHash: 2.0.2

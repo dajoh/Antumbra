@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50D206CA-7524-4F2D-8AD6-C23529E9DD55}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Binaries\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>..\ThirdParty\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Binaries\</OutDir>
+    <IncludePath>..\ThirdParty\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s_d.lib;glfw3_d.lib;soil_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Renderer\Camera.cpp" />
+    <ClCompile Include="Renderer\Image.cpp" />
+    <ClCompile Include="Renderer\Mesh.cpp" />
+    <ClCompile Include="Renderer\DynamicMesh.cpp" />
+    <ClCompile Include="Renderer\Shader.cpp" />
+    <ClCompile Include="Renderer\Texture2D.cpp" />
+    <ClCompile Include="Renderer\TextureArray.cpp" />
+    <ClCompile Include="Renderer\Window.cpp" />
+    <ClCompile Include="State\State.cpp" />
+    <ClCompile Include="State\StatePlay.cpp" />
+    <ClCompile Include="WorldRenderer\ChunkRenderer.cpp" />
+    <ClCompile Include="WorldRenderer\TextureRegistry.cpp" />
+    <ClCompile Include="WorldRenderer\WorldRenderer.cpp" />
+    <ClCompile Include="World\BlockAccess.cpp" />
+    <ClCompile Include="World\Blocks\Block.cpp" />
+    <ClCompile Include="World\Blocks\BlockBedrock.cpp" />
+    <ClCompile Include="World\Blocks\BlockCoalOre.cpp" />
+    <ClCompile Include="World\Blocks\BlockDiamondOre.cpp" />
+    <ClCompile Include="World\Blocks\BlockDirt.cpp" />
+    <ClCompile Include="World\Blocks\BlockGoldOre.cpp" />
+    <ClCompile Include="World\Blocks\BlockGrass.cpp" />
+    <ClCompile Include="World\Blocks\BlockIronOre.cpp" />
+    <ClCompile Include="World\Blocks\BlockStone.cpp" />
+    <ClCompile Include="World\Chunk.cpp" />
+    <ClCompile Include="World\ChunkCache.cpp" />
+    <ClCompile Include="World\ChunkGen.cpp" />
+    <ClCompile Include="World\Direction.cpp" />
+    <ClCompile Include="World\Simplex.cpp" />
+    <ClCompile Include="World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renderer\Camera.hpp" />
+    <ClInclude Include="Renderer\Image.hpp" />
+    <ClInclude Include="Renderer\Mesh.hpp" />
+    <ClInclude Include="Renderer\DynamicMesh.hpp" />
+    <ClInclude Include="Renderer\Shader.hpp" />
+    <ClInclude Include="Renderer\Texture2D.hpp" />
+    <ClInclude Include="Renderer\TextureArray.hpp" />
+    <ClInclude Include="Renderer\Window.hpp" />
+    <ClInclude Include="State\State.hpp" />
+    <ClInclude Include="State\StatePlay.hpp" />
+    <ClInclude Include="WorldRenderer\ChunkRenderer.hpp" />
+    <ClInclude Include="WorldRenderer\TextureRegistry.hpp" />
+    <ClInclude Include="WorldRenderer\WorldRenderer.hpp" />
+    <ClInclude Include="World\BlockAccess.hpp" />
+    <ClInclude Include="World\Blocks\Block.hpp" />
+    <ClInclude Include="World\Blocks\BlockBedrock.hpp" />
+    <ClInclude Include="World\Blocks\BlockCoalOre.hpp" />
+    <ClInclude Include="World\Blocks\BlockDiamondOre.hpp" />
+    <ClInclude Include="World\Blocks\BlockDirt.hpp" />
+    <ClInclude Include="World\Blocks\BlockGoldOre.hpp" />
+    <ClInclude Include="World\Blocks\BlockGrass.hpp" />
+    <ClInclude Include="World\Blocks\BlockIronOre.hpp" />
+    <ClInclude Include="World\Blocks\BlockStone.hpp" />
+    <ClInclude Include="World\Chunk.hpp" />
+    <ClInclude Include="World\ChunkCache.hpp" />
+    <ClInclude Include="World\ChunkGen.hpp" />
+    <ClInclude Include="World\Direction.hpp" />
+    <ClInclude Include="World\Simplex.hpp" />
+    <ClInclude Include="World\World.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

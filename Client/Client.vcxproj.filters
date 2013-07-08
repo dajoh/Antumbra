@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\State">
+      <UniqueIdentifier>{0a92c103-f3d9-496f-9fca-f26908aa5aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{9c0c9640-5b92-4bab-8511-32016b5b86b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{8e1a620e-7cfd-41f0-add3-170e4ea0bfa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WorldRenderer">
+      <UniqueIdentifier>{60a500bf-1c21-4b50-a2f7-1831d6ba1ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{92565bb5-24b9-454d-8cb6-789df6c43c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldRenderer">
+      <UniqueIdentifier>{cd48dd15-4970-486b-b96b-eb9a20918d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World">
+      <UniqueIdentifier>{529e26bb-62f0-4c59-b2d9-89250d85f504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{ea34c9f7-053a-4264-a9ea-44755960620e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World\Blocks">
+      <UniqueIdentifier>{3ae075d4-9924-4c4a-bb47-6163d0125714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World\Blocks">
+      <UniqueIdentifier>{14a1e5fe-5f3c-41d6-a5b3-33738279e193}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Renderer\Window.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shader.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Mesh.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\TextureArray.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Texture2D.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\DynamicMesh.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Camera.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="State\State.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State\StatePlay.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="World\BlockAccess.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Chunk.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ChunkCache.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRenderer\ChunkRenderer.cpp">
+      <Filter>Source Files\WorldRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRenderer\WorldRenderer.cpp">
+      <Filter>Source Files\WorldRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ChunkGen.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Image.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Simplex.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\Block.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockBedrock.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockDirt.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockGrass.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockStone.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRenderer\TextureRegistry.cpp">
+      <Filter>Source Files\WorldRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Direction.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockCoalOre.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockDiamondOre.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockGoldOre.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Blocks\BlockIronOre.cpp">
+      <Filter>Source Files\World\Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renderer\Window.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Mesh.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\TextureArray.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Texture2D.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DynamicMesh.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Camera.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="State\State.hpp">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State\StatePlay.hpp">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="World\BlockAccess.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Chunk.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ChunkCache.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRenderer\ChunkRenderer.hpp">
+      <Filter>Header Files\WorldRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRenderer\WorldRenderer.hpp">
+      <Filter>Header Files\WorldRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ChunkGen.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Image.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Simplex.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\Block.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockBedrock.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockDirt.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockGrass.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockStone.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRenderer\TextureRegistry.hpp">
+      <Filter>Header Files\WorldRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Direction.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockCoalOre.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockDiamondOre.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockGoldOre.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Blocks\BlockIronOre.hpp">
+      <Filter>Header Files\World\Blocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

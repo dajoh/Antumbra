@@ -1,3 +1,9 @@
+// ----------------------------------------------------------------------------
+// Originally written by Stefan Gustavson in Java, quickly translated to C++
+// by Daniel Lindberg.
+// Public Domain.
+// ----------------------------------------------------------------------------
+
 #include <cmath>
 #include "Simplex.hpp"
 

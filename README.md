@@ -3,6 +3,12 @@ Antumbra
 
 A Minecraft style rendering experiment.
 
+Pictures
+--------
+
+![Terrain](http://i.imgur.com/TGXwZEY.png)
+![Ores](http://i.imgur.com/eaMLLqk.png)
+
 Lighting
 --------
 

@@ -22,9 +22,12 @@ namespace Antumbra
 		}
 
 		glfwSetWindowUserPointer(m_window, this);
+		glfwSetKeyCallback(m_window, KeyCallback);
+		glfwSetCharCallback(m_window, CharCallback);
+		glfwSetMouseButtonCallback(m_window, MouseCallback);
 		glfwMakeContextCurrent(m_window);
-		glewExperimental = true;
 
+		glewExperimental = true;
 		if(glewInit() != GLEW_OK)
 		{
 			glfwDestroyWindow(m_window);

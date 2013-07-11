@@ -21,10 +21,12 @@ namespace Antumbra
 		switch(format)
 		{
 		case GL_RGB8:
+		case GL_SRGB8:
 			formatType = GL_UNSIGNED_BYTE;
 			basicFormat = GL_RGB;
 			break;
 		case GL_RGBA8:
+		case GL_SRGB8_ALPHA8:
 			formatType = GL_UNSIGNED_BYTE;
 			basicFormat = GL_RGBA;
 			break;

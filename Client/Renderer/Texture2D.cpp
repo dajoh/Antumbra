@@ -30,6 +30,10 @@ namespace Antumbra
 			formatType = GL_UNSIGNED_BYTE;
 			basicFormat = GL_RGBA;
 			break;
+		case GL_R16F:
+			formatType = GL_FLOAT;
+			basicFormat = GL_RED;
+			break;
 		case GL_RG16F:
 			formatType = GL_FLOAT;
 			basicFormat = GL_RG;

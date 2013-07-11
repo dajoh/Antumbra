@@ -25,6 +25,8 @@ namespace Antumbra
 
 		bool m_filled;
 		GLuint m_texture;
+
+		friend class Framebuffer;
 	};
 }
 

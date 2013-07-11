@@ -68,21 +68,9 @@ namespace Antumbra
 		return glfwWindowShouldClose(m_window) == GL_TRUE;
 	}
 
-	bool Window::IsKeyDown(Key key) const
+	bool Window::IsKeyDown(int key) const
 	{
-		int glfwKey;
-
-		switch(key)
-		{
-		case Key_W: glfwKey = GLFW_KEY_W; break;
-		case Key_A: glfwKey = GLFW_KEY_A; break;
-		case Key_S: glfwKey = GLFW_KEY_S; break;
-		case Key_D: glfwKey = GLFW_KEY_D; break;
-		default:
-			return false;
-		}
-
-		return glfwGetKey(m_window, glfwKey) == GLFW_PRESS;
+		return glfwGetKey(m_window, key) == GLFW_PRESS;
 	}
 
 	void Window::SetCursorPos(double x, double y)
@@ -137,22 +125,13 @@ namespace Antumbra
 		if(instance->m_onKeyEvent)
 		{
 			KeyEvent ev;
+			ev.key = key;
 
 			switch(action)
 			{
 			case GLFW_PRESS: ev.action = InputAction_Press; break;
 			case GLFW_REPEAT: ev.action = InputAction_Repeat; break;
 			case GLFW_RELEASE: ev.action = InputAction_Release; break;
-			default:
-				return;
-			}
-
-			switch(key)
-			{
-			case GLFW_KEY_W: ev.key = Key_W; break;
-			case GLFW_KEY_A: ev.key = Key_A; break;
-			case GLFW_KEY_S: ev.key = Key_S; break;
-			case GLFW_KEY_D: ev.key = Key_D; break;
 			default:
 				return;
 			}

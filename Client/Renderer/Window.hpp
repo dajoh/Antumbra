@@ -10,7 +10,6 @@
 
 namespace Antumbra
 {
-	enum Key;
 	enum MouseButton;
 	enum InputAction;
 
@@ -31,7 +30,7 @@ namespace Antumbra
 
 		bool HasFocus() const;
 		bool ShouldClose() const;
-		bool IsKeyDown(Key key) const;
+		bool IsKeyDown(int key) const;
 
 		void SetCursorPos(double x, double y);
 		void GetCursorPos(double &x, double &y) const;
@@ -60,14 +59,6 @@ namespace Antumbra
 		std::function<void(MouseEvent)> m_onMouseEvent;
 	};
 
-	enum Key
-	{
-		Key_W,
-		Key_A,
-		Key_S,
-		Key_D
-	};
-
 	enum MouseButton
 	{
 		MouseButton_Left,
@@ -84,7 +75,7 @@ namespace Antumbra
 
 	struct KeyEvent
 	{
-		Key key;
+		int key;
 		InputAction action;
 	};
 

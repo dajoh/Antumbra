@@ -69,22 +69,22 @@ namespace Antumbra
 	{
 		m_prevCameraPos = m_curCameraPos;
 
-		if(m_window.IsKeyDown(Key_W))
+		if(m_window.IsKeyDown(GLFW_KEY_W))
 		{
 			m_curCameraPos += m_camera.GetForwardVector() * (float)dt * 20.0f;
 		}
 
-		if(m_window.IsKeyDown(Key_A))
+		if(m_window.IsKeyDown(GLFW_KEY_A))
 		{
 			m_curCameraPos += -m_camera.GetRightVector() * (float)dt * 20.0f;
 		}
 
-		if(m_window.IsKeyDown(Key_S))
+		if(m_window.IsKeyDown(GLFW_KEY_S))
 		{
 			m_curCameraPos += -m_camera.GetForwardVector() * (float)dt * 20.0f;
 		}
 
-		if(m_window.IsKeyDown(Key_D))
+		if(m_window.IsKeyDown(GLFW_KEY_D))
 		{
 			m_curCameraPos += m_camera.GetRightVector() * (float)dt * 20.0f;
 		}

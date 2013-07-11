@@ -79,12 +79,12 @@ namespace Antumbra
 		glBufferData(GL_ARRAY_BUFFER, size, data, usage);
 	}
 
-	void Mesh::DrawIndices(GLenum primitive, int count) const
+	void Mesh::DrawIndices(GLenum primitive, int first, int count) const
 	{
 		glBindVertexArray(m_vao);
 		glBindBuffer(GL_ARRAY_BUFFER, m_vertexBuffer);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_indexBuffer);
-		glDrawElements(primitive, count, m_indexType, nullptr);
+		glDrawRangeElements(primitive, first, (first + count - 1), count, m_indexType, nullptr);
 	}
 
 	void Mesh::DrawVertices(GLenum primitive, int first, int count) const

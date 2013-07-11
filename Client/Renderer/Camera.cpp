@@ -70,7 +70,7 @@ namespace Antumbra
 
 	glm::mat4 Camera::GetProjMatrix() const
 	{
-		return glm::perspective(m_fieldOfView, m_aspectRatio, 0.01f, 1000.0f);
+		return glm::perspective(m_fieldOfView, m_aspectRatio, 0.01f, 4096.0f);
 	}
 
 	glm::mat4 Camera::GetViewMatrix() const

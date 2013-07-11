@@ -17,7 +17,7 @@ namespace Antumbra
 		void FillIndices(const void *data, size_t size, GLenum usage);
 		void FillVertices(const void *data, size_t size, GLenum usage);
 
-		void DrawIndices(GLenum primitive, int count) const;
+		void DrawIndices(GLenum primitive, int first, int count) const;
 		void DrawVertices(GLenum primitive, int first, int count) const;
 	private:
 		Mesh(const Mesh &);
